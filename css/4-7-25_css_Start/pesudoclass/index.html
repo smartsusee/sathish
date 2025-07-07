@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Only Underline</title>
+    <style>
+        :root {
+
+            --color-data: red;
+
+        }
+
+        #html {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+        }
+
+        #html::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 0;
+            background-color: red;
+        }
+
+        #html:hover::after {
+
+            width: 100%;
+            transition: 0.4s ease;
+
+        }
+
+        p {
+            color: var(--color-data);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex;justify-content: space-around;">
+        <div id="html">html container</div>
+        <div id="html">html container sdffffewf</div>
+        <div id="html">html container</div>
+        <div id="html">html container</div>
+        <div id="html">html </div>
+        <div id="html">html container</div>
+    </div>
+
+    <p>content</p>
+    <p>content</p>
+    <h1>content</h1>
+</body>
+
+</html>

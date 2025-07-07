@@ -1,0 +1,22 @@
+#container {
+
+    background-color: red;
+    width: 80%;
+    height: 100px;
+}
+
+
+#para {
+    width: 300px;
+    background-color: yellow;
+}
+
+#boxContainer {
+
+    background-color: green;
+}
+
+/* 1000px  */
+
+
+/* 100% === 1260px  */
