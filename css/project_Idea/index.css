@@ -1,0 +1,192 @@
+#navbar {
+    width: 100%;
+    background-color: black;
+    padding: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 6px;
+    align-items: center;
+}
+
+#logo {
+    padding: 5px;
+
+    width: 200px;
+
+    height: 50px;
+    border: 1px solid white;
+}
+
+#search {
+    width: 700px;
+    padding: 5px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+#box1 {
+
+    width: 200px;
+    height: 50px;
+    border: 1px solid white;
+
+}
+
+#box2 {
+
+    width: 400px;
+    padding: 4px;
+    height: 60px;
+    border: 1px solid white;
+}
+
+#login {
+
+    width: 300px;
+
+    height: 50px;
+    border: 1px solid white;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    /* height: 30px !important; */
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color: rgb(241, 239, 239);
+}
+
+.menudata {
+    width: 230px;
+    height: 400px;
+    overflow: auto;
+}
+
+
+
+
+#login {
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sideBar {
+    display: none;
+}
+
+
+
+
+#slideImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-inner::after {
+    content: "";
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    background-color: rgba(3, 2, 2, 0.237) !important;
+}
+
+.card {
+    height: 340px;
+    overflow: hidden;
+
+}
+
+#card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 400px));
+    gap: 5px;
+    justify-content: space-evenly;
+    justify-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.card:hover #move {
+    margin-top: -355px;
+    transition: 0.4s;
+
+}
+
+#move {
+    width: 100%;
+    height: 400px !important;
+    background-color: rgba(0, 0, 0, 0.552);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1068px) {
+    #sideBar {
+        display: block;
+    }
+
+    #search,
+    #login {
+        display: none;
+    }
+
+    #navbar {
+        width: 100%;
+        background-color: black;
+        padding: 4px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 6px;
+        align-items: center;
+    }
+}
+
+
+
+@media (max-width:450px) {
+    #box2 {
+
+        width: 300px;
+
+        height: 50px;
+        border: 1px solid white;
+
+    }
+}
